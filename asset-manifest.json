@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.91b7908e.chunk.css",
-    "main.js": "/static/js/main.ba2dd68d.chunk.js",
-    "main.js.map": "/static/js/main.ba2dd68d.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.354875b1.js",
-    "runtime-main.js.map": "/static/js/runtime-main.354875b1.js.map",
-    "static/js/2.ca5f48f5.chunk.js": "/static/js/2.ca5f48f5.chunk.js",
-    "static/js/2.ca5f48f5.chunk.js.map": "/static/js/2.ca5f48f5.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.91b7908e.chunk.css.map": "/static/css/main.91b7908e.chunk.css.map",
-    "static/js/2.ca5f48f5.chunk.js.LICENSE.txt": "/static/js/2.ca5f48f5.chunk.js.LICENSE.txt",
-    "static/media/img1.cb5d2978.jpg": "/static/media/img1.cb5d2978.jpg",
-    "static/media/img2.fe993e52.jpg": "/static/media/img2.fe993e52.jpg",
-    "static/media/img3.273b4b37.jpg": "/static/media/img3.273b4b37.jpg",
-    "static/media/img4.cef64bb8.jpg": "/static/media/img4.cef64bb8.jpg",
-    "static/media/img5.6dbe52e3.jpg": "/static/media/img5.6dbe52e3.jpg",
-    "static/media/img6.b10fb135.jpg": "/static/media/img6.b10fb135.jpg",
-    "static/media/imgbb.be67bb4b.jpg": "/static/media/imgbb.be67bb4b.jpg",
-    "static/media/imgcc.03d3f908.jpg": "/static/media/imgcc.03d3f908.jpg",
-    "static/media/imgmain.0a03fb7d.jpg": "/static/media/imgmain.0a03fb7d.jpg"
+    "main.css": "/larissa-app-client-preview/static/css/main.91b7908e.chunk.css",
+    "main.js": "/larissa-app-client-preview/static/js/main.94f21c7f.chunk.js",
+    "main.js.map": "/larissa-app-client-preview/static/js/main.94f21c7f.chunk.js.map",
+    "runtime-main.js": "/larissa-app-client-preview/static/js/runtime-main.c4cc59a0.js",
+    "runtime-main.js.map": "/larissa-app-client-preview/static/js/runtime-main.c4cc59a0.js.map",
+    "static/js/2.ca5f48f5.chunk.js": "/larissa-app-client-preview/static/js/2.ca5f48f5.chunk.js",
+    "static/js/2.ca5f48f5.chunk.js.map": "/larissa-app-client-preview/static/js/2.ca5f48f5.chunk.js.map",
+    "index.html": "/larissa-app-client-preview/index.html",
+    "static/css/main.91b7908e.chunk.css.map": "/larissa-app-client-preview/static/css/main.91b7908e.chunk.css.map",
+    "static/js/2.ca5f48f5.chunk.js.LICENSE.txt": "/larissa-app-client-preview/static/js/2.ca5f48f5.chunk.js.LICENSE.txt",
+    "static/media/img1.cb5d2978.jpg": "/larissa-app-client-preview/static/media/img1.cb5d2978.jpg",
+    "static/media/img2.fe993e52.jpg": "/larissa-app-client-preview/static/media/img2.fe993e52.jpg",
+    "static/media/img3.273b4b37.jpg": "/larissa-app-client-preview/static/media/img3.273b4b37.jpg",
+    "static/media/img4.cef64bb8.jpg": "/larissa-app-client-preview/static/media/img4.cef64bb8.jpg",
+    "static/media/img5.6dbe52e3.jpg": "/larissa-app-client-preview/static/media/img5.6dbe52e3.jpg",
+    "static/media/img6.b10fb135.jpg": "/larissa-app-client-preview/static/media/img6.b10fb135.jpg",
+    "static/media/imgbb.be67bb4b.jpg": "/larissa-app-client-preview/static/media/imgbb.be67bb4b.jpg",
+    "static/media/imgcc.03d3f908.jpg": "/larissa-app-client-preview/static/media/imgcc.03d3f908.jpg",
+    "static/media/imgmain.0a03fb7d.jpg": "/larissa-app-client-preview/static/media/imgmain.0a03fb7d.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.354875b1.js",
+    "static/js/runtime-main.c4cc59a0.js",
     "static/js/2.ca5f48f5.chunk.js",
     "static/css/main.91b7908e.chunk.css",
-    "static/js/main.ba2dd68d.chunk.js"
+    "static/js/main.94f21c7f.chunk.js"
   ]
 }
