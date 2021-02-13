@@ -13,38 +13,7 @@ import Amplify from 'aws-amplify';
 import config from './config';
 // -------------- Application Begins Bellow ------------ //
 
-// Amplify enables connection with AWS
-// Informations from -- src/config.js --
-Amplify.configure({
 
-    // API - AWS Cognito, User Pool for -- user information --
-    Auth: {
-        mandatorySignIn: false,
-        region: config.cognito.REGION,
-        userPoolId: config.cognito.USER_POOL_ID,
-        identityPoolId: config.cognito.IDENTITY_POOL_ID,
-        userPoolWebClientId: config.cognito.USER_POOL_CLIENT_ID
-    },
-    // API - AWS S3 Bucket for -- file storage --
-    Storage: {
-        AWSS3: {
-            region: config.s3.REGION,
-            bucket: config.s3.ATTACHEMENTS_BUCKET_NAME,
-            identityPoolId: config.cognito.IDENTITY_POOL_ID
-        }
-    },
-    // API - AWS Lambda Function for -- api call to DynamoDB [Database] --
-    API: {
-        endpoints: [
-            {
-                // name: -- Naming your Endpoint makes it easy to use - Name it whatever you want!
-                name: "posts",
-                endpoint: config.apiGateway.SERVICE_ENDPOINT,
-                region: config.apiGateway.REGION
-            },
-        ]
-    }
-});
 
 ReactDOM.render(
     <Router>
