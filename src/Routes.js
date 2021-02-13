@@ -24,7 +24,7 @@ export default function Routes({ appProps }) {
         <Switch>
 
             { /* AppliedRoute - Public & Private accessible links - Start */ }
-            <AppliedRoute path="/" exact component={Home} appProps={appProps} />    
+            <AppliedRoute path="/larissa-app-client-preview/" exact component={Home} appProps={appProps} />    
             <AppliedRoute path="/filter/:name" component={PostFilter} appProps={appProps} />   
             <AppliedRoute path="/view/:id" component={PostView} appProps={appProps} />    
             <AppliedRoute path="/login" component={Login} appProps={appProps} />

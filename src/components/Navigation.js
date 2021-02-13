@@ -49,7 +49,7 @@ export default function Navigation() {
         <nav id="Navigation" className="navbar navbar-expand-lg bg-white shadow-sm">
 
             { /* Brand - Start */}
-            <Link className="navbar-brand p-0" to="/">Larissa</Link>
+            <Link className="navbar-brand p-0" to="/larissa-app-client-preview/">Larissa</Link>
             { /* Brand - End */}
 
             { /* Toggler/collapsibe Button - Start */}
