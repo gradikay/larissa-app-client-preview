@@ -8,7 +8,6 @@ import { Auth } from "aws-amplify";
 import { useAppContext } from "../libs/contextLib";
 // CSS
 import "../css/Navigation.css"
-import { url } from "../Routes"
 // -------------- Application Begins Bellow ------------ //
 
 // Main function
@@ -50,7 +49,7 @@ export default function Navigation() {
         <nav id="Navigation" className="navbar navbar-expand-lg bg-white shadow-sm">
 
             { /* Brand - Start */}
-            <Link className="navbar-brand p-0" to={`${url}/`}>Larissa</Link>
+            <Link className="navbar-brand p-0" to="/">Larissa</Link>
             { /* Brand - End */}
 
             { /* Toggler/collapsibe Button - Start */}
@@ -128,7 +127,7 @@ function AppliedLinks() {
         <> 
             { /* Condo - Start */}
             <li className="nav-item">
-                <Link className="nav-link" to={`${url}/filter/condo`} >
+                <Link className="nav-link" to="/filter/condo">
                     Condo
                 </Link>
             </li>
@@ -136,7 +135,7 @@ function AppliedLinks() {
 
             { /* Land - Start */}
             <li className="nav-item">
-                <Link className="nav-link" to={`${url}/filter/land`}>
+                <Link className="nav-link" to="/filter/land">
                     Land
                 </Link>
             </li>
@@ -144,7 +143,7 @@ function AppliedLinks() {
 
             { /* Sell - Start */}
             <li className="nav-item">
-                <Link className="nav-link" to={`${url}/filter/sell`}>
+                <Link className="nav-link" to="/sell">
                     Sell
                 </Link>
             </li> 
@@ -167,12 +166,12 @@ function AppliedLinks() {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to={`${url}/filter/construction`}>
+                        <Link className="nav-link" to="/filter/new">
                             + New Constructions
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to={`${url}/filter/senior`}>
+                        <Link className="nav-link" to="/filter/senior">
                             + Senior Homes
                         </Link>
                     </li>
@@ -220,12 +219,12 @@ function AuthenticatedLinks({ handleLogout }) {
                 <ul className="dropdown-menu px-2">
 
                     <li className="nav-item">
-                        <Link className="nav-link" to={`${url}/postnew`}>
+                        <Link className="nav-link" to="/postnew">
                             + Add Properties
                         </Link>
                     </li>
                     <li className="nav-item">
-                    <Link className="nav-link" to={`${url}/dashboard`}>
+                        <Link className="nav-link" to="/dashboard">
                             <i className="fa fa-ban fa-spin"></i> Dashboard
                         </Link>
                     </li>  
@@ -252,7 +251,7 @@ function UnauthenticatedLinks() {
         <>
             { /* Register - Start */}
             <li className="nav-item">
-                <Link className="nav-link" to={`${url}/register`}>
+                <Link className="nav-link" to="/register">
                     Register
                 </Link>
             </li>
@@ -260,7 +259,7 @@ function UnauthenticatedLinks() {
 
             { /* Sign In - Start */}
             <li className="nav-item">
-                <Link className="nav-link" to={`${url}/login`}>
+                <Link className="nav-link" to="/login">
                     Login
                 </Link>
             </li>
