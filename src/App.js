@@ -1,8 +1,6 @@
 // This file is exported to --->  src/index.js
 // React required
 import React, { useState, useEffect } from "react";
-// Amplify required
-import { Auth } from "aws-amplify"; 
 // Routes (Links) for all pages -- See -- src/Routes.js
 import Routes from "./Routes"; 
 // Components
@@ -15,6 +13,7 @@ import { AppContext } from "./libs/contextLib";
 
 
 export default function App() {
+
     // Check if the user is logged in (true) or logged out (false)
     const [isAuthenticated, userHasAuthenticated] = useState(false);
     // Waiting for the application to finish signing in the user
@@ -22,9 +21,11 @@ export default function App() {
 
     // useEffect for the current session and setting our isAuthenticated to true if signed in
     useEffect(() => {
+
         async function onLoad() {
+
             try {
-                await Auth.currentSession();
+
                 userHasAuthenticated(true);
             }
             catch (e) {
@@ -35,13 +36,24 @@ export default function App() {
 
             setIsAuthenticating(false);
         }
+
+        // Return onLoad function
         onLoad(); 
+
     }, []);      
 
+    // Important user variables
+    const userId = "000000";
+    const userEmail = "gradi@fiberabbit.com";
+    const userFirstName = "Gradi";
+    const userLastName = "Musa"; 
+
+    // Return UI
     return (
         !isAuthenticating && (  
-            
-            <AppContext.Provider value={{ isAuthenticated, userHasAuthenticated }}>
+
+            // Include Global variables for the entire app in AppContext value
+            <AppContext.Provider value={{ isAuthenticated, userHasAuthenticated, userId, userEmail, userFirstName, userLastName }}>
 
                 { /* Navigation - (Navigation.js) - Main navigation - Start */}                    
                 <Navigation/>
