@@ -143,7 +143,7 @@ function AppliedLinks() {
 
             { /* Sell - Start */}
             <li className="nav-item">
-                <Link className="nav-link" to="/sell">
+                <Link className="nav-link" to="filter/sell">
                     Sell
                 </Link>
             </li> 
