@@ -18,22 +18,26 @@ import SignupConfirmation from "./containers/SignupConfirmation";
 import AppliedRoute from "./components/AppliedRoute";
 // -------------- Application Begins Bellow ------------ //
 
+const url = "/larissa-app-client-preview";
 
 export default function Routes({ appProps }) {
+
+    
+
     return (
         <Switch>
 
             { /* AppliedRoute - Public & Private accessible links - Start */ }
-            <AppliedRoute path="/larissa-app-client-preview/" exact component={Home} appProps={appProps} />    
-            <AppliedRoute path="/filter/:name" component={PostFilter} appProps={appProps} />   
-            <AppliedRoute path="/view/:id" component={PostView} appProps={appProps} />    
-            <AppliedRoute path="/login" component={Login} appProps={appProps} />
-            <AppliedRoute path="/register" component={Register} appProps={appProps} />
-            <AppliedRoute path="/reset" component={ResetPassword} appProps={appProps} />
-            <AppliedRoute path="/confirmation" component={SignupConfirmation} appProps={appProps} />  
-            <AppliedRoute path="/postnew" component={PostNew} appProps={appProps} />
-            <AppliedRoute path="/dashboard" component={Dashboard} appProps={appProps} />
-            <AppliedRoute path="/postedit/:id" component={PostEdit} appProps={appProps} />  
+            <AppliedRoute path={`${url}/`} exact component={Home} appProps={appProps} />    
+            <AppliedRoute path={`${url}/filter/:name`} component={PostFilter} appProps={appProps} />   
+            <AppliedRoute path={`${url}/view/:id`} component={PostView} appProps={appProps} />    
+            <AppliedRoute path={`${url}/login`} component={Login} appProps={appProps} />
+            <AppliedRoute path={`${url}/register`} component={Register} appProps={appProps} />
+            <AppliedRoute path={`${url}/reset`} component={ResetPassword} appProps={appProps} />
+            <AppliedRoute path={`${url}/confirmation`} component={SignupConfirmation} appProps={appProps} />  
+            <AppliedRoute path={`${url}/postnew`} component={PostNew} appProps={appProps} />
+            <AppliedRoute path={`${url}/dashboard`} component={Dashboard} appProps={appProps} />
+            <AppliedRoute path={`${url}/postedit/:id`} component={PostEdit} appProps={appProps} />  
             { /* AppliedRoute - Public & Private accessible links - End */ }
 
             { /* 404 Page - Start */ }
@@ -43,3 +47,5 @@ export default function Routes({ appProps }) {
         </Switch>
     );
 }
+
+export { url };
