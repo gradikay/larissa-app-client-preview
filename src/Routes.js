@@ -24,16 +24,16 @@ export default function Routes({ appProps }) {
         <Switch>
 
             { /* AppliedRoute - Public & Private accessible links - Start */ }
-            <AppliedRoute path="/" component={Home} appProps={appProps} />    
-            <AppliedRoute path="/filter/:name" component={PostFilter} appProps={appProps} />   
-            <AppliedRoute path="/view/:id" component={PostView} appProps={appProps} />    
-            <AppliedRoute path="/login" component={Login} appProps={appProps} />
-            <AppliedRoute path="/register" component={Register} appProps={appProps} />
-            <AppliedRoute path="/reset" component={ResetPassword} appProps={appProps} />
-            <AppliedRoute path="/confirmation" component={SignupConfirmation} appProps={appProps} />  
-            <AppliedRoute path="/postnew" component={PostNew} appProps={appProps} />
-            <AppliedRoute path="/dashboard" component={Dashboard} appProps={appProps} />
-            <AppliedRoute path="/postedit/:id" component={PostEdit} appProps={appProps} />  
+            <AppliedRoute path="/" exact component={Home} appProps={appProps} />    
+            <AppliedRoute path="/filter/:name" exact component={PostFilter} appProps={appProps} />   
+            <AppliedRoute path="/view/:id" exact component={PostView} appProps={appProps} />    
+            <AppliedRoute path="/login" exact component={Login} appProps={appProps} />
+            <AppliedRoute path="/register" exact component={Register} appProps={appProps} />
+            <AppliedRoute path="/reset" exact component={ResetPassword} appProps={appProps} />
+            <AppliedRoute path="/confirmation" exact component={SignupConfirmation} appProps={appProps} />  
+            <AppliedRoute path="/postnew" exact component={PostNew} appProps={appProps} />
+            <AppliedRoute path="/dashboard" exact component={Dashboard} appProps={appProps} />
+            <AppliedRoute path="/postedit/:id" exact component={PostEdit} appProps={appProps} />  
             { /* AppliedRoute - Public & Private accessible links - End */ }
 
             { /* 404 Page - Start */ }
